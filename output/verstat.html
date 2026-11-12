@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Верстат змішування світів. Тема 2026." />
+    <title>Верстат, Мікс світів</title>
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+  </head>
+  <body data-page="atelier" data-base="./">
+    <a class="skip" href="#content">До вмісту</a>
+    <div id="site-header"></div>
+
+<main id="content" tabindex="-1">
+      <section class="atelier">
+        <div class="wrap">
+          <div data-reveal>
+            <p class="kicker">Верстат</p>
+            <h1 class="atelier__title">Зіткай свій світ</h1>
+            <p class="lead prose atelier__lead">
+              Спочатку вибери "звичайне", потім "чуже". Натисни "Зіткати", коли обидві частини
+              стоять у верстаті. Доти світу ще немає.
+            </p>
+          </div>
+
+          <div class="atelier__loom" data-reveal>
+            <button type="button" class="atelier__slot" id="epoch-slot">
+              <span class="atelier__slot-label">Перша частина</span>
+              <strong class="atelier__slot-value" id="epoch-value">Порожньо</strong>
+            </button>
+            <p class="atelier__seam" aria-hidden="true">шов</p>
+            <button type="button" class="atelier__slot" id="force-slot">
+              <span class="atelier__slot-label">Друга частина</span>
+              <strong class="atelier__slot-value" id="force-value">Порожньо</strong>
+            </button>
+          </div>
+
+          <div class="atelier__trays">
+            <fieldset class="atelier__tray">
+              <legend class="atelier__legend">Звичайне</legend>
+              <div class="atelier__threads" id="epoch-tray"></div>
+            </fieldset>
+            <fieldset class="atelier__tray">
+              <legend class="atelier__legend">Чуже</legend>
+              <div class="atelier__threads" id="force-tray"></div>
+            </fieldset>
+          </div>
+
+          <div class="atelier__actions" id="atelier-actions">
+            <button type="button" class="atelier__weave" id="weave-btn" disabled>Зіткати</button>
+            <button type="button" class="atelier__reset" id="reset-btn" hidden>Почати знову</button>
+          </div>
+
+          <article class="atelier__poster" id="atelier-result" hidden aria-live="polite"></article>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+
+    <script src="./js/content.js"></script>
+    <script src="./js/site.js"></script>
+    <script src="./js/components/header.js"></script>
+    <script src="./js/components/footer.js"></script>
+    <script src="./js/components/atelier.js"></script>
+    <script src="./js/atelier.js"></script>
+    <script src="./js/boot.js"></script>
+  </body>
+</html>

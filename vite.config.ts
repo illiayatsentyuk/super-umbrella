@@ -1,7 +1,11 @@
-import vue from '@vitejs/plugin-vue'
-import { defineConfig } from 'vite'
+import vue from "@vitejs/plugin-vue";
+import { defineConfig } from "vite";
 
-// https://vite.dev/config/
+// Relative base keeps the built site free of root-absolute asset URLs.
 export default defineConfig({
+  base: "./",
   plugins: [vue()],
-})
+  build: {
+    cssCodeSplit: false,
+  },
+});

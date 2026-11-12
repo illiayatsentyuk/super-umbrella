@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Мікс світів. Поєднай непоєднуване. Тема 2026. Візьми дві речі, які не стоять поруч, і збери з них один кадр."
+    />
+    <title>Мікс світів. Поєднай непоєднуване</title>
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+  </head>
+  <body data-page="home" data-base="./">
+    <a class="skip" href="#content">До вмісту</a>
+    <div id="site-header"></div>
+
+<main id="content" tabindex="-1">
+      <section id="hero" class="hero">
+        <div class="hero__bg" aria-hidden="true">
+          <span class="hero__float hero__float--a"></span>
+          <span class="hero__float hero__float--b"></span>
+        </div>
+        <div class="wrap hero__copy">
+          <h1 class="hero__title">Мікс світів</h1>
+          <p class="hero__subtitle">Поєднай непоєднуване</p>
+          <p class="hero__intro">
+            Візьми дві речі, які в житті не стоять поруч, наприклад гілку і світлофор або дзвінок і
+            два сонця. Збери з них один кадр.
+          </p>
+          <div class="hero__actions">
+            <a class="btn" href="./worlds.html">Дивитися світи</a>
+            <a class="btn btn--ghost" href="./verstat.html">Відкрити верстат</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section page-doors">
+        <div class="wrap">
+          <ul class="page-doors__list" id="page-doors-list"></ul>
+        </div>
+      </section>
+
+      <section id="tema" class="section theme">
+        <div class="wrap">
+          <div data-reveal>
+            <p class="kicker">Пари</p>
+            <h2>Дві речі в одному кадрі</h2>
+            <p class="lead prose">
+              Тут чотири пари і кілька світів з галереї. У кожному світі дві частини стоять поруч.
+              Смолоскип біля супутника. Клас біля чужої планети.
+            </p>
+          </div>
+          <ul class="grid grid--4 theme__pairs" id="theme-pairs"></ul>
+          <div class="theme__stories" id="theme-stories"></div>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+
+    <script src="./js/content.js"></script>
+    <script src="./js/site.js"></script>
+    <script src="./js/components/header.js"></script>
+    <script src="./js/components/footer.js"></script>
+    <script src="./js/components/page-doors.js"></script>
+    <script src="./js/components/theme-pairs.js"></script>
+    <script src="./js/components/theme-stories.js"></script>
+    <script src="./js/home.js"></script>
+    <script src="./js/boot.js"></script>
+  </body>
+</html>
